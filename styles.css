@@ -22,6 +22,8 @@ html, body {
   background-image: url(https://images.creativemarket.com/0.1.0/ps/2286196/1160/774/m1/fpnw/wm1/1606_bakery-1screen-.jpg?1487247061&s=ff097fe2d02b08211d6e609827f5fa51);
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
+  
   
 }
 
@@ -34,9 +36,13 @@ html, body {
 form {
   height: 100%;
   width: 100%;
-  overflow-y: hidden;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
 }
 section{
+  margin: auto;
   background-color: rgba(177, 150, 0, 0.384);
   height: 100vh;
   width: 100vw;
@@ -62,7 +68,7 @@ section{
   margin: 2vh auto;
 
   text-align: center;
-  width: 50vw;
+  width: 80%;
 } 
 #logo {
   background-image: url(logo.png);
@@ -73,12 +79,12 @@ section{
   margin: auto;
 }
 #title {
-  font-size: 2.5em;
+  font-size: 5vh;
   font-weight: 500;
   letter-spacing: 5px;
 }
 #description {
-  line-height: 2;
+  line-height: 4vh;
 }
 
 .button,
@@ -102,7 +108,7 @@ button {
 
   position: absolute;
   left: 0;
-  bottom: 10%;
+  bottom: 5%;
 
   display: flex;
 }
@@ -155,6 +161,7 @@ textarea {
   #description {
     font-size:small
   }
+
   
   .button,
   button {
@@ -170,8 +177,11 @@ textarea {
   .card {
     overflow-y: scroll;
   }
-
+#description {
+  line-height: 2;
+}
   .navi {
-    bottom: 1%;
+    margin-top: 20px;
+    position: static;
   }
 }
